@@ -4,7 +4,7 @@ public class Parametros {
     double AW011;
     double AW012;
     double AW021;
-    /// AW, NEURONA-1, NEURONA, N_CAPA
+    /// AW
     double AW111;
     double AW112;
     double AW211;
@@ -15,11 +15,11 @@ public class Parametros {
     double E0;
     double E1;
     double E2;
-    /// LAMBDA, N_CAPA, N_NEURONA
+    /// LAMBDA
     double Lambda11;
     double Lambda12;
     double Lambda21;
-    /// SALIDA, N_CAPA, N_NEURONA
+    /// SALIDA
     double S01;
     double S02;
     double S11;
@@ -48,8 +48,9 @@ public class Parametros {
     double W221_prima;
 
 
-    public Parametros(double alpha, double W011, double W111, double W211, double W021, double W121, double W221, double W012, double W112, double W212, double e0, double e1, double e2) {
+    public Parametros(double alpha, double Sd, double W011, double W111, double W211, double W021, double W121, double W221, double W012, double W112, double W212, double e0, double e1, double e2) {
         this.alpha = alpha;
+        this.Sd = Sd;
         this.W011 = W011;
         this.W111 = W111;
         this.W211 = W211;
